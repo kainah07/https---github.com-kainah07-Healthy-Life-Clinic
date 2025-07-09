@@ -95,7 +95,7 @@
 }
 
 .contact-form-container {
-  max-width: 900px;
+  max-width: 800px;
   width: 100%;
   height: auto;
   margin: 0 auto;
@@ -104,20 +104,14 @@
 
 .swiper {
   width: 70%;
-  height: 50%;
+  height: 500px;
   padding: 50px 0;
   margin: auto;
-}
-
-.swiper-wrapper {
-  height: 375px;
-  margin: 0 auto;
 }
 
 
 .swiper-slide {
   max-width: 500px;
-  flex-shrink: 0;  
   border-radius: 10px;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
