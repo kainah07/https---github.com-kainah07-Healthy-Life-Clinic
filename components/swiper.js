@@ -1,7 +1,7 @@
 const swiper = new Swiper('.mySwiper', {
       loop: true,
       spaceBetween: 30,
-      slidesPerView: 'auto', // ✅ Important
+      slidesPerView: 'auto',
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
@@ -28,9 +28,9 @@ const button = document.querySelector('.login-button');
 const icon = document.getElementById('login-icon');
 
 button.addEventListener('mouseenter', () => {
-  icon.src = 'images/login-hover.svg';
+  icon.src = 'images/login-gray.svg';
 });
 
 button.addEventListener('mouseleave', () => {
-  icon.src = 'images/login-icon.svg';
+  icon.src = 'images/login-black.svg';
 });
