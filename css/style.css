@@ -46,7 +46,10 @@ p, a, li {
 }
 
 .navbar-scrolled {
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  background-color: #ffffffe3;
+  border-radius: 50px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -92,19 +95,60 @@ p, a, li {
   max-width: 500px;
   width: 100%;
   height: 100%;
+  border-radius: 500px;
 }
 
 .cta-appointment-button {
-  width: 120px;
-  height: 35px;
+  font-size: 20px;
+  width: 150px;
+  height: 50px;
   border-radius: 5px;
   border: none;
   position: relative;
   z-index: 1;
 }
 
-.card {
-  width: 250px !important;
+.custom-card {
+  width: 370px;
+  height: 500px;
+  position: relative;
+  border-radius: 25px;
+  overflow: hidden;
+  transition: transform 0.5s ease-in-out;
+}
+
+.custom-card:hover {
+  transform: scale(1.1); /* Zoom in slightly */
+}
+.custom-card .description {
+  color: #ffffff;
+  position: absolute;
+  top: 380px;
+  left: 20px;
+  z-index: 2;
+  width: 200px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  font-size: 20px;
+}
+
+.custom-card .title {
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 50px;
+  width: 200px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 2;
+}
+
+.card-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  z-index: 1;
+  filter: brightness(0.75);
 }
 
 .cta-appointment-button:hover {
@@ -127,8 +171,10 @@ p, a, li {
   border-radius: 25px;
 }
 
+
+
 .swiper {
-  width: 70%;
+  width: 80%;
   height: 500px;
   padding: 50px 0;
   margin: auto;
@@ -141,7 +187,7 @@ p, a, li {
   text-align: center;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   padding: 50px;
-  background-image:url('../images/background.png');
+  background-color: #0d6efd;
 }
 
 .swiper-slide img {
@@ -221,6 +267,18 @@ p, a, li {
   .hero-section {
     height: auto !important;
     min-height: unset !important;
+  }
+
+  .navbar-scrolled {
+    margin: 10px;
+    background-color: #ffffffe3;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  #doctorImage {
+    width: 100%;
+    height: 100%;
   }
 
   .contact-us-section {
